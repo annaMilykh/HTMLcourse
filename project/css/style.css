@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1280px;
+    height: 3286px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    box-shadow: 0 0 5px;
+}
+
+.page-header-title {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    line-height: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+
+.page-header {
+    padding: 50px;
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #445161;
+    color: #fff;
+    height: 223px;
+
+}
+
+.page-header-list {
+    width: 422px;
+    height: 127px;
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+
+}
+
+.page-header-list-item {
+    list-style-type: none;
+    margin-left: 26px;
+
+}
+
+.page-header-list-item:before {
+    content: "✓";
+    display: block;
+    width: 25px;
+    height: 19px;
+    background-size: cover;
+    position: absolute;
+    left: -1px;
+    margin-top: 1px;
+    font-weight: 600;
+
+}
+
+.page-header-wrp {
+    float: left;
+}
+
+.page-header-img {
+    float: right;
+    display: inline-block;
+    width: 469px;
+    height: 214px;
+}
+
+
+.main {
+    /*border: 1px solid black;*/
+    height: 2328px;
+}
+
+.about-product {
+    margin: 50px;
+    height: 245px;
+}
+
+.product-title {
+    color: #445161;
+    font-family: "Arial";
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.about-product-wrap {
+    float: left;
+    display: block;
+}
+
+.product-video {
+    width: 430px;
+    height: 245px;
+    float: right;
+}
+
+.prodact-p {
+    display: block;
+    color: #333333;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 649px;
+    height: 63px;
+    margin-bottom: 20px;
+}
+
+.dignity {
+    clear: both;
+    width: 1280px;
+   height: 370px;
+    background-color: #F2F2F2;
+    padding-top: 50px;
+
+}
+
+.dignity-wrap {
+    margin: 30px 50px 30px 50px;
+}
+
+.dignity-title {
+    color: #445161;
+    font-family: "Arial";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    /*padding-top: 50px;*/
+   
+
+}
+
+.dignity-list:first-child {
+    width: 48%;
+    float: left;
+}
+
+
+.dignity-list:last-child {
+    width: 48%;
+    float: right;
+}
+
+.dignity-item {
+    margin-left: 36px;
+    color: #333333;
+    font-family: "Arial MT";
+    font-size: 17px;
+    font-weight: 510;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.dignity-list {
+    list-style-type: none;
+    box-sizing: border-box;
+
+}
+
+.dignity-item:before {
+    content: "+";
+    display: block;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    position: absolute;
+    left: -40px;
+    margin-top: 6px;
+    background-color: #445161;
+    font-weight: 600;
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+}
+
+.screenshot {
+    height: 387px;
+    margin: 50px;
+    float: left;
+}
+
+.screen-comment {
+    float: right;
+    height: 108px;
+    width: 359px;
+}
+
+.screen-item {
+    width: 49%;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.screen-item:nth-child(2n) {
+    margin-left: 10px;
+}
+
+.screen-title {
+    color: #445161;
+    font-family: "Arial";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.screen-comment {
+    width: 60%;
+    float: right;
+}
+
+.screen-img {
+    width: 200px;
+    height: 150px;
+    float: left;
+
+}
+
+.screen-comment-description {
+    color: #445161;
+    font-family: "Arial";
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+    margin-top: -5px;
+    margin-left: -15px;
+    margin-bottom: 8px;
+}
+
+
+.screen-comment-p {
+    color: #333333;
+    font-family: "Arial";
+    font-size: 15.5px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 23px;
+    text-align: left;
+    margin-left: -15px;
+}
+
+.reviews{
+    height: 424px;
+    width: 1280px;
+    background-color: #F2F2F2;
+    clear: both;
+}
