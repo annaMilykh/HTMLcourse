@@ -5,7 +5,7 @@
 
 .container {
     width: 1280px;
-    height: 3286px;
+    min-height: 3286px;
     margin: 0 auto;
     /*border: 1px solid red;*/
     box-shadow: 0 0 5px;
@@ -31,15 +31,15 @@
     font-weight: 400;
     background-color: #445161;
     color: #fff;
-    height: 223px;
+    min-height: 223px;
 
 }
 
 .page-header-list {
-    width: 422px;
-    height: 127px;
+    width: 460px;
+    min-height: 127px;
     color: #ffffff;
-    font-family: "Arial MT";
+    font-family: "Arial";
     font-size: 20px;
     font-weight: 400;
     line-height: 36px;
@@ -48,13 +48,17 @@
 
 }
 
-.page-header-list-item {
-    list-style-type: none;
-    margin-left: 26px;
 
+.page-header-list-item {
+    margin: 0;
+    padding: 0 0 0 30px;
+    box-sizing: border-box;
+    position: relative;
+    list-style-type: none;
 }
 
-.page-header-list-item:before {
+
+/*.page-header-list-item:before {
     content: "✓";
     display: block;
     width: 25px;
@@ -64,8 +68,28 @@
     left: -1px;
     margin-top: 1px;
     font-weight: 600;
+}*/
+
+
+.page-header-list-item:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 19px;
+    background-image: url(../img/check_icon.png);
+    background-size: cover;
+    position: absolute;
+    left: -1px;
+    top: 6px;
+    margin-top: 1px;
+    font-weight: 600;
+    /*background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;*/
 
 }
+
+
 
 .page-header-wrp {
     float: left;
@@ -75,19 +99,35 @@
     float: right;
     display: inline-block;
     width: 469px;
-    height: 214px;
+    min-height: 214px;
 }
 
+.page-header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
 
 .main {
     /*border: 1px solid black;*/
-    height: 2328px;
+    min-height: 2328px;
 }
 
 .about-product {
-    margin: 50px;
-    height: 245px;
+    /* margin: 50px; */
+    /* height: 245px; */
+    padding: 50px;
+    box-sizing: border-box;
 }
+
+.about-product:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
 
 .product-title {
     color: #445161;
@@ -108,9 +148,10 @@
 
 .product-video {
     width: 430px;
-    height: 245px;
+    min-height: 245px;
     float: right;
 }
+
 
 .prodact-p {
     display: block;
@@ -121,21 +162,28 @@
     line-height: 24px;
     text-align: left;
     width: 649px;
-    height: 63px;
-    margin-bottom: 20px;
+    /* height: 63px; */
+    /* margin-bottom: 20px; */
+    margin: 0 0 20px 0;
 }
 
+.prodact-p:last-child {
+    margin: 0;
+}
+
+
 .dignity {
-    clear: both;
-    width: 1280px;
-   height: 370px;
+    /* clear: both; */
+    width: 100%;
+    /* height: 370px; */
     background-color: #F2F2F2;
-    padding-top: 50px;
+    padding: 50px 50px 20px 50px;
+    box-sizing: border-box;
 
 }
 
 .dignity-wrap {
-    margin: 30px 50px 30px 50px;
+    /*margin: 30px 50px 30px 50px;*/
 }
 
 .dignity-title {
@@ -145,8 +193,16 @@
     font-weight: 400;
     text-align: center;
     /*padding-top: 50px;*/
-   
+    margin: 0 0 30px 0;
 
+
+}
+
+.dignity:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
 }
 
 .dignity-list:first-child {
@@ -161,18 +217,20 @@
 }
 
 .dignity-item {
-    margin-left: 36px;
+    /* margin-left: 36px; */
     color: #333333;
-    font-family: "Arial MT";
+    font-family: "Arial";
     font-size: 17px;
     font-weight: 510;
     line-height: 24px;
     text-align: left;
-    margin-bottom: 20px;
+    margin: 0 0 30px 0;
+    padding: 0 0 0 40px;
     box-sizing: border-box;
     position: relative;
 
 }
+
 
 .dignity-list {
     list-style-type: none;
@@ -185,21 +243,26 @@
     display: block;
     color: #ffffff;
     width: 32px;
-    height: 32px;
+    min-height: 32px;
     background-size: cover;
     position: absolute;
-    left: -40px;
-    margin-top: 6px;
+    /*left: -40px;*/
+    left: 0;
+    /* margin-top: 6px; */
+    top: 5px;
+    /* font-weight: 600; */
+    line-height: 32px;
     background-color: #445161;
     font-weight: 600;
     font-size: 40px;
-    position: absolute;
     text-align: center;
 }
 
 .screenshot {
-    height: 387px;
-    margin: 50px;
+    /* height: 387px; */
+    /* margin: 50px; */
+    padding: 50px 50px 20px 50px;
+    box-sizing: border-box;
     float: left;
 }
 
@@ -211,8 +274,9 @@
 
 .screen-item {
     width: 49%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     float: left;
+    margin: 0 0 30px 0;
 }
 
 .screen-item:nth-child(2n) {
@@ -231,14 +295,16 @@
 }
 
 .screen-comment {
-    width: 60%;
+    width: 63%;
     float: right;
 }
 
 .screen-img {
     width: 200px;
-    height: 150px;
+    min-height: 150px;
     float: left;
+    margin: 0 10px 0 0;
+
 
 }
 
@@ -251,9 +317,10 @@
     letter-spacing: normal;
     line-height: 30px;
     text-align: left;
-    margin-top: -5px;
-    margin-left: -15px;
-    margin-bottom: 8px;
+    /* margin-top: -5px; */
+    /* margin-left: -15px; */
+    /* margin-bottom: 8px; */
+    margin: 0 0 5px 0;
 }
 
 
@@ -266,12 +333,195 @@
     letter-spacing: normal;
     line-height: 23px;
     text-align: left;
-    margin-left: -15px;
+    /* margin-left: -15px; */
+    margin: 0;
 }
 
-.reviews{
-    height: 424px;
+.reviews {
+    padding: 50px 50px 50px 50px;
+    box-sizing: border-box;
+    min-height: 440px;
     width: 1280px;
     background-color: #F2F2F2;
     clear: both;
+}
+
+.reviews-title {
+    color: #445161;
+    font-family: "Arial";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin: 0px 0px 35px 0px;
+}
+
+.reviews-comment {
+    min-height: 121px;
+    width: 483px;
+    float: right;
+    background-image: url(/img/bg_review.png);
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.rewiews-item-txt {
+    min-height: 64px;
+    width: 436px;
+    color: #333333;
+    font-family: "Italic";
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    position: absolute;
+    top: 16px;
+    left: 27px;
+
+}
+
+.rewiews-autor {
+    color: #989898;
+    font-family: "Arial";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.reviews-item {
+    min-height: 121px;
+    width: 580px;
+    float: right;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.reviews-item:nth-child(2n-1) {
+    float: left;
+}
+
+.rewiews-autor {
+    display: block;
+}
+
+/*
+.reviews-img{
+    width: 77px;
+    height: 77px;
+    background-image: url(/img/userpic.png);
+    background-repeat: no-repeat;
+    margin: 2px 2px 2px 2px;
+}
+*/
+
+.reviews-item-buttom {
+    margin-bottom: 25px;
+}
+
+
+
+.prices {
+    width: 100%;
+    min-height: 656px;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.prices-title {
+    width: 100%;
+    color: #445161;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 36px;
+    display: block;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+
+}
+
+.prices-item {
+    width: 25%;
+    margin: 0 50px 0 0;
+    box-sizing: border-box;
+    border: 3px solid #445161;
+    background-color: #445161;
+    border-radius: 7px;
+}
+
+
+.price-standart {
+    width: 300px;
+    min-height: 306px;
+}
+
+.prices-ol {
+    display: block;
+    list-style-type: decimal;
+    padding-left: 30px;
+    background-color: #445161;
+    color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 15px 2px;
+}
+
+.prices-h3 {
+    display: block;
+    text-align: center;
+    background-color: #445161;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 14px;
+}
+
+.prices-span {
+    height: 71px;
+    min-width: 87px;
+    font-size: 40px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    font-family: "Arial";
+    color: #445161;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.buy-button {
+    display: block;
+    width: 260px;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 5px 20px 20px 20px;
+    border: 1px solid #445161;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 550;
+    color: #445161;
+    font-family: "Arial";
+
+}
+
+
+.main-footer {
+    width: 100%;
+    min-height: 530px;
+    background-color: #445161;
 }
