@@ -356,7 +356,6 @@ clear: both;
     box-sizing: border-box;
     min-height: 440px;
     width: 100%;
-    border: 2px solid red;
     background-color: #F2F2F2;
     clear: both;
 }
@@ -392,7 +391,7 @@ clear: both;
     line-height: 18px;
     text-align: left;
     position: absolute;
-    top: 16px;
+    top: 10px;
     left: 27px;
 
 }
@@ -411,12 +410,14 @@ clear: both;
     min-height: 121px;
     width: 580px;
     float: right;
-    margin-bottom: 30px;
     position: relative;
+    margin: 0;
+    
 }
 
 .reviews-item:nth-child(2n-1) {
     float: left;
+
 }
 
 .rewiews-autor {
@@ -436,6 +437,10 @@ clear: both;
 .reviews-item-buttom {
     /* margin-bottom: 25px; */
     margin: 0 0 25px 0;
+}
+
+.reviews-item-top{
+    margin-bottom: 20px;
 }
 
 .prices {
